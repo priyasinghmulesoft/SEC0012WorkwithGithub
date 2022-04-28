@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
 	</http:listener-config>
 	<flow name="testFlow" doc:id="3ab004fa-0b52-4ff4-af13-d1c62be6adc1" >
 		<http:listener doc:name="Listener" doc:id="e72e40b1-b5c9-453b-851d-56824de6ab96" config-ref="HTTP_Listener_config" path="/testflow"/>
-		<logger level="INFO" doc:name="Logger" doc:id="82ca2046-a758-49c8-a296-6ea3b76bcd24" message="new msg received"/>
+		<logger level="INFO" doc:name="Logger" doc:id="82ca2046-a758-49c8-a296-6ea3b76bcd24" message="this flow was just triggered"/>
 		<ee:transform doc:name="Transform Message" doc:id="c358acb6-cdc4-4f3f-9c6d-3cf205347f9e">
 			<ee:message>
 				<ee:set-payload><![CDATA[%dw 2.0
